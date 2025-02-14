@@ -6,6 +6,6 @@ There are different pattern of web accessibility that is laid out here https://w
 
 ## Components
 
-1. [Accordian](https://github.com/himanshu31shr/accessibility-katas/blob/main/src/components/AccessibleAccordian/README.md)
-2. [Combobox](https://github.com/himanshu31shr/accessibility-katas/blob/main/src/components/AccessibleComboBox/README.md)
+1. [Accordian](https://github.com/himanshu31shr/accessibility-katas/blob/main/src/components/AccessibleAccordian)
+2. [Combobox](https://github.com/himanshu31shr/accessibility-katas/blob/main/src/components/AccessibleComboBox)
 
