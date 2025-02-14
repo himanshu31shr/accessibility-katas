@@ -1,21 +1,11 @@
-# Exercise: Accessible Accordion Component
+# Accessibility katas
 
-## Requirements
+Aim of this repository isto provide a starter template for building accessible components and do kata exercises on them.
 
-- **Keyboard Navigation**: The accordion must be fully navigable using the keyboard alone.
-- **ARIA Roles and Properties**: The accordion must incorporate appropriate ARIA roles and properties to convey its structure and state to assistive technologies.
-- **Visual Feedback**: The accordion must provide clear visual cues for focus states and expanded/collapsed sections.
+There are different pattern of web accessibility that is laid out here https://www.w3.org/WAI/ARIA/apg/patterns/. Following this, few components are made accessibe
 
-## Accessibility Details
+## Components
 
-We will be following the guidelines defined by [W3C Accordion Pattern](https://www.w3.org/WAI/ARIA/apg/patterns/accordion/).
+1. [Accordian](https://github.com/himanshu31shr/accessibility-katas/blob/main/src/components/AccessibleAccordian/README.md)
+2. [Combobox](https://github.com/himanshu31shr/accessibility-katas/blob/main/src/components/AccessibleComboBox/README.md)
 
-## Example Implementation
-
-[Accordion Example](https://www.w3.org/WAI/ARIA/apg/patterns/accordion/examples/accordion/)
-
-## Additional Considerations
-
-- **Content Accessibility**: Ensure that the content within the accordion is also accessible, with proper heading structure, image alt text, and other accessibility features.
-- **Animation**: If you use animation to show/hide the content, make sure it doesn't cause accessibility issues. Provide options to disable animations or adjust their speed.
-- **Screen Reader Testing**: Test the accordion with screen readers to ensure that the information is conveyed clearly and the interaction is smooth.

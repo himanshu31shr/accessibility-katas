@@ -1,0 +1,38 @@
+.accessible-combobox {
+  width: 200px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  position: relative;
+  cursor: pointer;
+}
+
+.combobox-header {
+  padding: 10px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.arrow {
+  font-size: 12px;
+}
+
+.combobox-list {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  border: 1px solid #ccc;
+  border-top: none;
+  position: absolute;
+  width: 100%;
+  background-color: white;
+  z-index: 1;
+}
+
+.combobox-item {
+  padding: 10px;
+}
+
+.combobox-item:hover {
+  background-color: #f0f0f0;
+}
