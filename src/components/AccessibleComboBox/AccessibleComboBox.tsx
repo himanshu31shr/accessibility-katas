@@ -17,10 +17,10 @@ export default function AccessibleComboBox() {
 
   return (
     <div className="accessible-combobox">
-      <div className="combobox-header" onClick={toggleDropdown}>
+      <button className="combobox-header" onClick={toggleDropdown}>
         <span>{selectedItem || "Select an option"}</span>
         <span className="arrow">{isOpen ? "▲" : "▼"}</span>
-      </div>
+      </button>
       {isOpen && (
         <ul className="combobox-list">
           {items.map((item) => (

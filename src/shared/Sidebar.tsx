@@ -21,6 +21,15 @@ export const Sidebar = () => (
       >
         Combo Box
       </NavLink>
+      <NavLink
+        key={"modal"}
+        to="/modal"
+        className={({ isActive, isPending }) =>
+          isPending ? "pending" : isActive ? "active" : ""
+        }
+      >
+        Modal
+      </NavLink>
     </div>
   </nav>
 );

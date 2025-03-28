@@ -8,4 +8,5 @@ There are different pattern of web accessibility that is laid out here https://w
 
 1. [Accordian](https://github.com/himanshu31shr/accessibility-katas/blob/main/src/components/AccessibleAccordian)
 2. [Combobox](https://github.com/himanshu31shr/accessibility-katas/blob/main/src/components/AccessibleComboBox)
+2. [Modal Dialog](https://github.com/himanshu31shr/accessibility-katas/blob/main/src/components/AccessibleModal)
 

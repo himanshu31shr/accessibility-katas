@@ -9,6 +9,9 @@ export const Dashboard = () => {
       <li>
         <Link to="/combo-box">Combo Box</Link>
       </li>
+      <li>
+        <Link to="/modal">Modal</Link>
+      </li>
     </ul>
   );
 };
