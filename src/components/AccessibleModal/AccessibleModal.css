@@ -2,6 +2,23 @@
   padding: 10px 20px;
   font-size: 16px;
   cursor: pointer;
+  border: 2px solid transparent;
+}
+
+.accessible-modal .open-modal-button:focus {
+  outline: none;
+  border-color: #646cff;
+  box-shadow: 0 0 0 3px rgba(100, 108, 255, 0.4);
+}
+
+.modal-backdrop {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.5);
+  z-index: 999;
 }
 
 .modal-overlay {
@@ -10,44 +27,98 @@
   left: 0;
   width: 100%;
   height: 100%;
-  background: rgba(0, 0, 0, 0.5);
   display: flex;
   justify-content: center;
   align-items: center;
+  z-index: 1000;
 }
 
 .modal-content {
-  background: white;
+  background: var(--background-color, white);
+  color: var(--text-color, black);
   border-radius: 8px;
   width: 400px;
   max-width: 90%;
   padding: 20px;
   box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  position: relative;
 }
 
 .modal-header {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  border-bottom: 1px solid #ccc;
+  border-bottom: 1px solid var(--border-color, #ccc);
   padding-bottom: 10px;
 }
 
 .modal-header h2 {
   margin: 0;
+  color: inherit;
 }
 
 .close-modal-button {
   background: none;
-  border: none;
+  border: 2px solid transparent;
+  padding: 8px;
   font-size: 20px;
   cursor: pointer;
+  color: inherit;
+  border-radius: 4px;
+}
+
+.close-modal-button:focus {
+  outline: none;
+  border-color: #646cff;
+  box-shadow: 0 0 0 3px rgba(100, 108, 255, 0.4);
 }
 
 .modal-body {
   margin: 20px 0;
+  color: inherit;
 }
 
 .modal-footer {
   text-align: right;
+  border-top: 1px solid var(--border-color, #ccc);
+  padding-top: 10px;
+}
+
+/* Animation support with reduced motion preference */
+@media (prefers-reduced-motion: no-preference) {
+  .modal-backdrop {
+    animation: fadeIn 0.2s ease-out;
+  }
+
+  .modal-content {
+    animation: slideIn 0.2s ease-out;
+  }
+}
+
+@keyframes fadeIn {
+  from { opacity: 0; }
+  to { opacity: 1; }
+}
+
+@keyframes slideIn {
+  from {
+    opacity: 0;
+    transform: translateY(-20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* High contrast mode support */
+@media (forced-colors: active) {
+  .modal-content {
+    border: 2px solid ButtonText;
+  }
+  
+  .close-modal-button:focus {
+    outline: 2px solid ButtonText;
+    outline-offset: 2px;
+  }
 }

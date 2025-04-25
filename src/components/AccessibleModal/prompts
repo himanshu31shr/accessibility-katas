@@ -1,0 +1,18 @@
+PROMPT FOR GENERATING DOCS:
+
+A modal component is created in this directory which may or may not work properly. Can you perform following operations on it.
+
+- Create an action plan if it doesn't work correctly, such than the instructions can act as prompt to an LLM agent and save it in ACTION_PLAN.md inside the same folder.
+- Check if this component is accessible use this link https://www.w3.org/WAI/ARIA/apg/patterns/dialog-modal/ which outlines te requirements for a accessible modal component. If the component is not accessible according to the provided link then create an action to make it accessible such than the instructions can act as prompt to an LLM agent and save it in ACTION_PLAN.md inside the same folder.
+- Make sure you do all the above oprations only on selected folder in context and not in any other folders.
+- Create a PRD document and knowledge base for this component; such that LLM agent can refer to these when any future changes are required in this component.
+
+PROMPT FOR IMPLEMENTATION:
+Please start implementing as per the created documents. Also make sure to following following standards:
+
+1. Follow TDD best practices to implement any fixes or features and make sure to add relevant unit tests whereever required.
+2. Document everything when adding or fixing any features. This can readmeMD or PRD or knowledge base documents.
+3. Make sure to follow clean coding principles strictly.
+
+FINAL CHECK PROMPT
+Can you check & update ACTION_PLAN for accessiblemodal component. IF anything is left out retain that otherwise remove whatever has been implemented. Also update PRD and knowledge base and readme file to be accurate as per current state of the code.
